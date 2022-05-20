@@ -8,31 +8,31 @@
   "start_url": "./",
   "icons": [
     {
-      "src": "android-72x72.png",
+      "src": "assets/icons/android-72x72.png",
       "sizes": "72x72",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "android-96x96.png",
+      "src": "assets/icons/android-96x96.png",
       "sizes": "96x96",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "android-128x128.png",
+      "src": "assets/icons/android-128x128.png",
       "sizes": "128x128",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "android-144x144.png",
+      "src": "assets/icons/android-144x144.png",
       "sizes": "144x144",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "icon-192x192.png",
+      "src": "assets/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable any"

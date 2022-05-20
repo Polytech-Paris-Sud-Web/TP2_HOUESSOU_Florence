@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+body,html{
+
+    height:calc(100% - 4em);
+}
+body{
+    background:whitesmoke;
+    color: black;
+    text-align:justify;
+    padding: 2px;
+
+}

@@ -26,6 +26,13 @@ export class AppComponent {
                   window.location.reload();
               }
           });
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js').then(() => {
+              console.log('Installation successful!');
+            }, (err) => {
+              console.log('Service Worker registration failed: ', err);
+            });
+          }
       }        
   }
 }
