@@ -1,19 +1,17 @@
-name:Build and Deploy
-  on:
-   push:
+name: Build and Deploy to Pages
+on:
+  push:
     branches:
       - master
-jobs: 
+jobs:
   build:
-  
-    runs-on: ubuntu-lastest
-    
+    runs-on: ubuntu-latest
     steps:
-    - uses: action/checout@v2
+    - uses: actions/checkout@v2
     - name: Angular Deploy gh-pages Actions
-      uses: AhsanAyaz/angular-deploy-gh-pages-action@v1.2.0
+      uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.2.0
       with:
-        github_access_token: ${{secrets.ACCESS_TOKEN }}
-        buil_folder: dist/simple-app
+        github_access_token: ${{ secrets.ACCESS_TOKEN }}
+        build_folder: dist/simple-app
         base_href: /TP2_HOUESSOU_Florence/
     
