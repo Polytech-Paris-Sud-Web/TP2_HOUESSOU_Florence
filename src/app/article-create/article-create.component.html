@@ -1,0 +1,21 @@
+<p>article-create works!</p>
+<h2>Article</h2>
+<h3><i>Create your article</i></h3>
+<form [formGroup]="articleForm" (ngSubmit)="createArticle()">
+  <div class="form-group row mb-4">
+    <label class="center-block">title:
+      <input class="form-control" formControlName="title"  [(ngModel)]="article.title" title="title">
+    </label>
+    <br />
+    <label class="center-block">content:
+      <textarea class="form-control" formControlName="content" [(ngModel)]="article.content" content="content"></textarea>
+    </label>
+    <br />
+    <label class="center-block">authors:
+      <input class="form-control" formControlName="authors" [(ngModel)]="article.author" author="author" >
+    </label>
+    <br />
+    <button class="btn btn-success" [disabled]="articleForm.invalid" (click)="createArticle()"type="submit">Save</button>
+  </div>
+
+</form>

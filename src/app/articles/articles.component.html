@@ -1,0 +1,7 @@
+<p>articles works!</p>
+<p> Mise à jour le : {{lastUpdate | date}}</p>
+<app-article *ngFor="let article of this.articles" [article]="article" (deletedArticle)="delete($event) ">
+</app-article>
+
+
+ 
