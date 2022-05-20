@@ -14,10 +14,10 @@ export class ArticleComponent implements OnInit {
   article ?:Article; 
   @Output()
   deletedArticle : EventEmitter<Article> = new EventEmitter();
- /* @Output()
+  @Output()
   createArticle: EventEmitter<Article> = new EventEmitter();
   @Output()
-  getArticle: EventEmitter<Article> = new EventEmitter();*/
+  getArticle: EventEmitter<Article> = new EventEmitter();
 
 
   constructor(private router:Router, private routA:ActivatedRoute,private articleService:ArticleService ){
