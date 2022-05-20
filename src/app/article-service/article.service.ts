@@ -23,16 +23,18 @@ export class ArticleService {
   }
   constructor(private http : HttpClient,httpM:HttpClientModule) {
   }
-
+private readonly url="https://my-json-server.typicode.com/Polytech-Paris-Sud-Web/TP2_HOUESSOU_Florence";
 public getArticles(): Observable<Article[]> {
-  return this.http.get<Article[]>("http://localhost:3000/articles").pipe(
+  return this.http.get<Article[]>(`${this.url}/articles`).pipe(
   );
 }
 /*  handleError(handleError: any): import("rxjs").OperatorFunction<Article[], any> {
     throw new Error('Method not implemented.');
   }*/
 
-public deleteArticle(id:number) {
+
+public deleteArticle(id:number): Observable<Article[]> {
+  
   
   return this.http.delete<Article[]>(`$http://localhost:3000/articles/${id}`);
 }
